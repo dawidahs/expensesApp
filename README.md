@@ -1,7 +1,9 @@
 #README
 
 Freelnace Expense tracking app
+
 Requirements:
+
     Get ticket data
         Type of ticket
         Ticket date
