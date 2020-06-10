@@ -2,9 +2,12 @@ import requests
 
 class SaveAttachment:
     def __init__(self, url):
-        r = requests.get(url, allow_redirects=True)
-        name = url.split("/")[-1:]
-        return open("".join(name), "wb").write(r.content)
+        self.url = url
+        self.r = requests.get(self.url, allow_redirects=True)
+
+    def save_file(self, url):
+        self.name = self.url.split("/")[-1:]
+        return open("".join(self.name), "wb").write(self.r.content)
         
 #Get the attachment from a URL
 url = 'https://dl.airtable.com/.attachments/df34772226061257eb7ed599cda373f0/2405a5a2/WertgarantieMarzo.png'
