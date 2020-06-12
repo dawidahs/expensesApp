@@ -1,7 +1,7 @@
 #README
 
 ##Description
-Freelnace Expense tracking app
+Freelnacer Expense tracking app
 
 ##Requirements:
 
